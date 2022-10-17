@@ -1,0 +1,21 @@
+header {
+    background-color: #548f4d;
+    padding: 1em 1em;
+    margin: 0 auto;
+    width: 960px;
+}
+
+header h1 {
+    color: black;
+    font-size: 3em;
+    font-weight: 1000;
+    position: relative;
+    left: .6em;
+}
+
+.Holder {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+
+}

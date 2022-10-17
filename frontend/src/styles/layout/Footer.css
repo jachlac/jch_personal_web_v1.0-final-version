@@ -1,0 +1,21 @@
+footer {
+    background-color: #548f4d;
+    padding: 1em 1em;
+    width: 960px;
+}
+
+.ParFooter {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    left: .6em;
+}
+
+.Holder {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    margin: 0 auto;
+
+}

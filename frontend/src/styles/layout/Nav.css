@@ -1,0 +1,19 @@
+nav {
+    background-color: #396434;
+    padding: 0.25em 1em;
+    margin: 0 auto;
+    width: 960px;
+}
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0 2px 0 0;
+    display: flex;
+  
+  }
+  nav ul li {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5px;
+
+}
