@@ -1,0 +1,16 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+/* margin-top: 20px;
+margin-bottom: 20px; */
+}
+
+.box{
+margin: 7px;
+}
+
+.box image{
+max-width: 50%;
+    }

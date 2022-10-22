@@ -1,5 +1,5 @@
 nav {
-    background-color: #396434;
+    background-color: black;
     padding: 0.25em 1em;
     margin: 0 auto;
     width: 960px;
@@ -10,10 +10,10 @@ nav {
     padding: 0 2px 0 0;
     display: flex;
   
+  
   }
   nav ul li {
     display: flex;
     justify-content: flex-start;
     margin: 0 5px;
-
 }

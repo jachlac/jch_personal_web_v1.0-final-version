@@ -1,21 +1,24 @@
 footer {
-    background-color: #548f4d;
-    padding: 1em 1em;
+    background-color: black;
+    padding: 1.5em 1em;
+    margin: 0 auto;
+
     width: 960px;
 }
 
 .ParFooter {
-    color: black;
+    color: #f2a900	;
     font-size: 1em;
     font-weight: 500;
     position: relative;
     left: .6em;
 }
 
-.Holder {
+.HolderF {
     display: flex;
     justify-content: flex-start;
     margin: 5px;
     margin: 0 auto;
+    align-items: center;
 
 }

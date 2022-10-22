@@ -25,18 +25,18 @@
 } */
 
 body {
- font-family: 'Consolas';
-font-size: 16px;
-line-height: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .holder {
- width: 960px;
- margin:0 auto;
-  }
-h2 {
-font-weight: 800;
-color:#548f4d ;
-margin: 0 0 1em;
-   }
-   
+  width: 960px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  font-weight: 800;
+  color: #f2a900;
+  margin: 0 0 1em;
+}

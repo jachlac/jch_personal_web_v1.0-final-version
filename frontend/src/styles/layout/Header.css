@@ -1,21 +1,28 @@
 header {
-    background-color: #548f4d;
-    padding: 1em 1em;
+    background-color: #000000;
+    padding: 0.5em 1em;
     margin: 0 auto;
     width: 960px;
 }
 
 header h1 {
-    color: black;
+    color: #f2a900	;
     font-size: 3em;
     font-weight: 1000;
     position: relative;
     left: .6em;
 }
 
-.Holder {
+.HolderH {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 5px;
+    align-items: center;
+
+}
+.headerLogo{
+display: flex;
+justify-content: flex-end;
+align-items: center;
 
 }
