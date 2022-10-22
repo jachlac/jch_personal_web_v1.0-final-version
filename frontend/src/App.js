@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LoremIpsum } from 'react-lorem-ipsum';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
