@@ -8,6 +8,7 @@ import Footer from './components/layout/Footer';
 
 import HomePage from './pages/HomePage';
 import NovedadesPage from './pages/NovedadesPage';
+import AprendePage from './pages/AprendePage';
 import ContactoPage from './pages/ContactoPage';
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
       <Nav/>
       <Routes>
         <Route path= "/" element={<HomePage />} />
-        <Route path= "Novedades" element={<NovedadesPage/>} />
-        <Route path= "Contacto" element={<ContactoPage/>} />
+        <Route path= "News" element={<NovedadesPage/>} />
+        <Route path= "Learn" element={<AprendePage/>} />
+        <Route path= "Contact" element={<ContactoPage/>} />
 
       </Routes>
       </BrowserRouter>

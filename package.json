@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nodemon": "^2.0.20",
     "react-lorem-ipsum": "^1.4.10"
   }
 }

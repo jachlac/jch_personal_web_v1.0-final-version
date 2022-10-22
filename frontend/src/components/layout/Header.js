@@ -10,7 +10,7 @@ const Header = (props) => {
             <img src="./images/Header/icono.svg" width="70" alt="logo developer"/>
             </div>
             <div>
-            <h1 >JCH Full Stack Developer</h1>
+            <h1 >CRYPTO STATE</h1>
             </div>
             </div>
             </header>

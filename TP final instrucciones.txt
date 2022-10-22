@@ -1,0 +1,11 @@
+Contar con al menos 4 secciones distintas
+
+El frontend debe estar desarrrollado en React.js.
+
+Implementar Node.js como lenguaje de servidor y Handlebars como motor de plantillas.
+
+Enviar mails mediante un formulario.
+
+Realizar las 4 operaciones básicas de las bases de datos: leer, escribir, modificar y eliminar registros de una tabla.
+
+El sitio o aplicación debe ser totalmente navegable.

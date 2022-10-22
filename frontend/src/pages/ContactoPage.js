@@ -1,14 +1,14 @@
 import React from 'react';
 import '../styles/Pages/Contacto.css';
 
-const Contacto = (props) => {
+const Contact = (props) => {
     return (
         <main className='holder contacto'>
             <div>
-                <h2>Contacto Rapido</h2>
+                <h2>Fast Contact</h2>
                 <form action='' method='' className='formulario'>
                     <p>
-                        <label for="nombre">Nombre</label>
+                        <label for="name">Name</label>
                         <input type="text" name="" />
                     </p>
                     <p>
@@ -16,11 +16,11 @@ const Contacto = (props) => {
                         <input type="text" name="" />
                     </p>
                     <p>
-                        <label for="telefono">Telefono</label>
+                        <label for="phone">Phone</label>
                         <input type="text" name="" />
                     </p>
                     <p>
-                        <label for="mensaje">Mensaje</label>
+                        <label for="message">Message</label>
                         <textarea name=""></textarea>
                     </p>
                     <p class="acciones">
@@ -29,8 +29,8 @@ const Contacto = (props) => {
                 </form>
             </div>
             <div className='datos'>
-                <h2>Otras vias de comunicacion</h2>
-                <p>Tambien podes comunicarte  por los siguientes medios</p>
+                <h2>Other ways to get in touch</h2>
+                <p>You can also contact us by:</p>
                 <ul>
                     <div>
                     <img src="./images/pages/contacto/twitter.png" width={50} alt="twitter"></img>
@@ -53,4 +53,4 @@ const Contacto = (props) => {
         </main>
         );
     }
-    export default Contacto;
+    export default Contact;

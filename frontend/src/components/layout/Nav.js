@@ -11,8 +11,9 @@ const Nav = (props) => {
             <div className="holder">
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/Novedades">Novedades</Link></li>
-                    <li><Link to="/Contacto">Contacto</Link></li>
+                    <li><Link to="/News">News</Link></li>
+                    <li><Link to="/Learn">Learn</Link></li>
+                    <li><Link to="/Contact">Contact</Link></li>
                 </ul>
             </div>
 
