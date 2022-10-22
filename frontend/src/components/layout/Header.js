@@ -14,7 +14,7 @@ const Header = (props) => {
             </div>
 
             <div className='loginButton'>
-            <Button href='https://www.lavoz.com.ar/' variant="outline-warning">LOG IN</Button>{' '}
+            <Button href='/LogIn' variant="outline-warning">LOG IN</Button>{' '}
             </div>
                   </div>
             </header>

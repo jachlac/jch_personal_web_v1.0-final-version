@@ -11,6 +11,8 @@ import HomePage from './pages/HomePage';
 import NovedadesPage from './pages/NovedadesPage';
 import AprendePage from './pages/AprendePage';
 import ContactoPage from './pages/ContactoPage';
+import LogInPage from './pages/LogInPage';
+
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
         <Route path= "News" element={<NovedadesPage/>} />
         <Route path= "Learn" element={<AprendePage/>} />
         <Route path= "Contact" element={<ContactoPage/>} />
-        
+        <Route path= "LogIn" element={<LogInPage/>} />
 
       </Routes>
       </BrowserRouter>
