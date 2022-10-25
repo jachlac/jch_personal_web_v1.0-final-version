@@ -1,8 +1,8 @@
 .contacto {
     display: flex;
     /* justify-content: space-around; */
-margin-top: 20px;
-margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contacto div {
@@ -48,4 +48,11 @@ margin-bottom: 20px;
 .formulario input[type="submit"]:hover {
     background-color: #dc9b05;
 
+}
+
+.logos {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
 }

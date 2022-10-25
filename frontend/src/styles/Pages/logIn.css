@@ -1,0 +1,35 @@
+/* body .imagenFondo  {
+
+background-image: url('../../../public/images/pages/logIn/login.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 960px;
+} */
+
+.loginForm {
+    display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.acciones{
+    margin-top: 20px;
+}
+
+.loginForm input[type="submit"] {
+    background: #f2a900;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.loginForm input[type="submit"]:hover {
+    background-color: #dc9b05;
+
+}

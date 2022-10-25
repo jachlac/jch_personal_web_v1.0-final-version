@@ -31,7 +31,7 @@ const Contact = (props) => {
             <div className='datos'>
                 <h2>Other ways to get in touch</h2>
                 <p>You can also contact us by:</p>
-                <ul>
+                <ul className='logos'>
                     <div>
                     <img src="./images/pages/contacto/twitter.png" width={50} alt="twitter"></img>
                     </div>
@@ -39,14 +39,9 @@ const Contact = (props) => {
                     <img src="./images/pages/contacto/gmail.png" width={50} alt="gmail"></img>
                     </div>
                     <div>
-                    <img src="./images/pages/contacto/skype.png" width={50} alt="skype"></img>
-                    </div>
-                    <div>
                     <img src="./images/pages/contacto/linkedin.png" width={50} alt="linkedin"></img>
                     </div>
-                    <div>
-                    <img src="./images/pages/contacto/github.png" width={50} alt="github"></img>
-                    </div>
+                   
 
                 </ul>
             </div>
