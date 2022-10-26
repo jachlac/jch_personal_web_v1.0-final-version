@@ -1,8 +1,75 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-a {
-  color: #00B7FF;
+.holder {
+  width: 960px;
+  margin: 0 auto;
 }
+
+h2, h3 {
+  font-weight: 800;
+  color: #f2a900;
+  margin: 0 0 1em;
+}
+/* inio Header */
+header {
+  background-color: #000000;
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  width: 960px;
+}
+
+header h1 {
+  color: #f2a900	;
+  font-size: 3em;
+  font-weight: 1000;
+  position: relative;
+  left: .6em;
+}
+
+.HolderH {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  align-items: center;
+
+}
+.headerLogo{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+/* Final Header */
+
+/* inicio Footer */
+footer {
+  background-color: black ;
+
+  padding: 1.5em 1em;
+  margin: 0 auto;
+
+  width: 960px;
+}
+
+.ParFooter {
+  color: #f2a900	;
+  font-size: 1em;
+  font-weight: 500;
+  position: relative;
+  left: .6em;
+}
+
+.HolderF {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+  margin: 0 auto;
+  align-items: center;
+
+}
+/* Final Footer */
