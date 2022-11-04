@@ -9,15 +9,18 @@
     "aos": "^2.3.4",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
     "express": "~4.16.1",
     "express-session": "^1.17.3",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
     "jquery": "^3.6.1",
+    "md5": "^2.3.0", 
     "moment": "^2.29.4",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "nodemailer-express-handlebars": "^5.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "util": "^0.12.5"
   }
 }

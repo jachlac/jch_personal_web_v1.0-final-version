@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var session = require('express-session'); // esto conviene ponerlo al principio para que lo cargue al iniciar
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var indexAdmRouter = require('./routes/admin/indexAdm');
 var loginRouter = require ('./routes/admin/login');
 
 var app = express();
@@ -20,13 +22,24 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//antes de los router hay que cargar session, sino nunca va a funcionar
+// app.use(session({
+//   secret: 'sapopepe',
+//   resave: false,
+//   saveUninitialized: true
+// })); 
+
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/indexAdm', indexAdmRouter);
 
-app.get('/admin/login', function (req,res){
-  res.send('Hola soy la pagina de inicio de sesion')
-})
+
+// app.get('/admin/login', function (req,res){
+//   res.send('Hola soy la pagina de inicio de sesion')
+ 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

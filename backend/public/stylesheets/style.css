@@ -2,6 +2,8 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .holder {
@@ -9,12 +11,14 @@ body {
   margin: 0 auto;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 800;
   color: #f2a900;
   margin: 0 0 1em;
 }
-/* inio Header */
+
+/* inicio Header */
 header {
   background-color: #000000;
   padding: 0.5em 1em;
@@ -23,24 +27,18 @@ header {
 }
 
 header h1 {
-  color: #f2a900	;
-  font-size: 3em;
-  font-weight: 1000;
-  position: relative;
+  color: #f2a900;
+  font-size: 2em;
+  font-weight: 100;
   left: .6em;
 }
 
-.HolderH {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px;
-  align-items: center;
 
-}
-.headerLogo{
-display: flex;
-justify-content: flex-end;
-align-items: center;
+.headerLogo {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -48,7 +46,7 @@ align-items: center;
 
 /* inicio Footer */
 footer {
-  background-color: black ;
+  background-color: black;
 
   padding: 1.5em 1em;
   margin: 0 auto;
@@ -57,7 +55,7 @@ footer {
 }
 
 .ParFooter {
-  color: #f2a900	;
+  color: #f2a900;
   font-size: 1em;
   font-weight: 500;
   position: relative;
@@ -70,6 +68,44 @@ footer {
   margin: 5px;
   margin: 0 auto;
   align-items: center;
+  justify-content: center;
 
 }
+
 /* Final Footer */
+
+/* inicio login */
+
+.loginForm {
+  display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.acciones{
+  margin-top: 20px;
+}
+
+.loginForm [type="submit"] {
+  background: #f2a900;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 16px;
+  padding: 6px 20px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.loginForm [type="submit"]:hover {
+  background-color: #dc9b05;
+
+}
+
+.loginForm div label{
+  min-width: 300px;
+
+}
+/* final login */

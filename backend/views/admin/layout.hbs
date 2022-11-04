@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+
+</head>
+
+<body>
     <header>
-        <div className='HolderH'>
-            <div className='headerLogo'>
-            <img src="../../public/images/header2.png" width="100" alt="Crypto"/>
-            <h1 >CRYPTO STATE</h1>
-            </div>
-           
-                  </div>
-            </header>
-    {{{body}}} 
-    {{!-- el {{{body}}} carga el contenido con la estrucutra del HTML y su jerarquia  --}}
-    <footer className='HolderF' >
+        <div class='headerLogo'>
             <div>
-                <img src="../../public/images/footer.png" width={50} alt="wallet"></img>
+                <img src="/images/header2.png" width="100" alt="Crypto" />
             </div>
             <div>
-                <p className='ParFooter'> by Jose Chicala - Full stack Developer - Copyright © 2022.</p>
+                <h1>CRYPTO STATE</h1>
             </div>
-        </footer>
-  </body>
+
+        </div>
+    </header>
+    <br>
+    {{{body}}}
+    {{!-- el {{{body}}} carga el contenido con la estrucutra del HTML y su jerarquia --}}
+
+    <footer class='HolderF'>
+        <div>
+            <img src="/images/footer.png" width="100" alt="wallet"></img>
+        </div>
+        <div>
+            <p class='ParFooter'> by Jose Chicala - Full stack Developer - Copyright © 2022.</p>
+        </div>
+    </footer>
+</body>
+
 </html>

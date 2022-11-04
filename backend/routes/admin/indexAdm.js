@@ -2,8 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
+
 router.get('/', function(req, res, next) {
-  res.redirect('/admin/login');
+  res.render('admin/indexAdm', { //aca la ruta no va con barra al inicio
+    layout:'admin/layout'
+  });
 });
+
+
+
 
 module.exports = router;
