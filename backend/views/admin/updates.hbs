@@ -8,7 +8,7 @@
             <h3 style="color: black;">Updates List</h3>
         </div>
         <div class="col-5 text-end">
-            <a class="btn btn-success" href=""> <i class="fa fa-plus" aria-hidden="true"></i>
+            <a class="btn btn-success" href="/admin/updates/new"> <i class="fa fa-plus" aria-hidden="true"></i>
                 New</a>
         </div>
         <div class="row">{{!-- fila 3 --}}
@@ -18,14 +18,19 @@
                         <tr class="table-dark">
                             <th scope="col">#</th>
                             <th scope="col">Tittle</th>
+                            <th scope="col">Subtittle</th>
+                            <th scope="col">Images</th>
                             <th scope="col">Actions</th>
                         </tr>
                     </thead>
 
-                    <body>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>tittle</td>
+                    <tbody>
+                        {{#each updates}}{{!-- le digo a Handlebars que recorra cada novedad y la imprima --}}
+                        <tr> {{!-- --}}
+                            <th scope="row">{{id}}</th>
+                            <td>{{tittle}}</td>
+                            <td>{{subtittle}}</td>
+                            <td>{{image}}</td>
                             <td class="text-end">
                                 <a class="btn btn-secondary" href="">
                                     <i class="fa fa-pencil" aria-hidden="true"></i></a>
@@ -33,7 +38,8 @@
                                     <i class="fa fa-trash" aria-hidden="true"></i></a>
                             </td>
                         </tr>
-                    </body>
+                        {{/each}}
+                    </tbody>
                 </table>
 
             </div>
