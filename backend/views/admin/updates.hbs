@@ -1,0 +1,39 @@
+<div class="holder">
+    <div class="row"> {{!-- fila 1 --}}
+        <p class="text-end"> Hola {{persona}}! <a class="btn btn-warning" href="/admin/login/logout"> Close session <i
+                    class="fas fa-sign-out-alt"></i> </a></p>
+    </div>
+    <div class="row">{{!-- fila 2 --}}
+        <div class="col-7">
+            <h3 style="color: black;">Updates List</h3>
+        </div>
+        <div class="col-5 text-end">
+            <a class="btn btn-success" href=""> <i class="fa fa-plus" aria-hidden="true"></i>
+                New</a>
+        </div>
+        <div class="row">{{!-- fila 3 --}}
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col">#</th>
+                            <th scope="col">Tittle</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+
+                    <body>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>tittle</td>
+                            <td class="text-end">
+                                <a class="btn btn-secondary" href="">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <a class="btn btn-secondary" href="">
+                                    <i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                    </body>
+                </table>
+
+            </div>
