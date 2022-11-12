@@ -26,7 +26,8 @@ router.get('/new', async function (req, res, next) {
 
 router.post('/new', async (req, res, next) => {
   try {
-    if (req.body.tittle != "" && req.body.subtittle != "" && req.body.body != "" && req.body.images != "") {
+    console.log(req.body)
+    if (req.body.tittle != "" && req.body.subtittle != "" && req.body.body != "") {
       await updatesModel.insertNew(req.body);
       res.redirect('/admin/updates')
     } else {
@@ -45,6 +46,13 @@ router.post('/new', async (req, res, next) => {
     });
   }
 });
+
+router.get('/eliminar/:id', async (req, res, next) =>{
+  var id = req.params.id; //capturo el valor del id, lo guardo en la variable y lo paso en el await de mas abajo
+
+  await updatesModel.deleteNewsById(id);
+  res.redirect('admin/updates');
+})
 
 
 module.exports = router;

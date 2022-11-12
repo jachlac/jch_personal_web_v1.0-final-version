@@ -18,4 +18,11 @@ async function insertNew(obj) {
         throw error;
     }
 }
-module.exports = { getUpdates, insertNew }
+
+async function deleteNewsById(id) { //especifico que borre en base a id y no segun objetos para que cuando haga el barrido no borre todos, sino solo el del id seleccionado
+        var query = "delete from updates where id = ?";
+        var rows = await pool.query(query, [id]); 
+        return rows;
+    }
+
+module.exports = { getUpdates, insertNew, deleteNewsById }

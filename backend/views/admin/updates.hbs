@@ -19,7 +19,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Tittle</th>
                             <th scope="col">Subtittle</th>
-                            <th scope="col">Images</th>
+                            <th scope="col">Body</th>
                             <th scope="col">Actions</th>
                         </tr>
                     </thead>
@@ -30,11 +30,11 @@
                             <th scope="row">{{id}}</th>
                             <td>{{tittle}}</td>
                             <td>{{subtittle}}</td>
-                            <td>{{image}}</td>
+                            <td>{{body}}</td>
                             <td class="text-end">
                                 <a class="btn btn-secondary" href="">
                                     <i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a class="btn btn-secondary" href="">
+                                <a class="btn btn-secondary" href="/admin/new/delete/{{id}}">
                                     <i class="fa fa-trash" aria-hidden="true"></i></a>
                             </td>
                         </tr>
