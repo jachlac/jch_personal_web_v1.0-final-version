@@ -47,11 +47,11 @@ router.post('/new', async (req, res, next) => {
   }
 });
 
-router.get('/eliminar/:id', async (req, res, next) =>{
+router.get('/delete/:id', async (req, res, next) =>{
   var id = req.params.id; //capturo el valor del id, lo guardo en la variable y lo paso en el await de mas abajo
 
   await updatesModel.deleteNewsById(id);
-  res.redirect('admin/updates');
+  res.redirect('/admin/updates')
 })
 
 
