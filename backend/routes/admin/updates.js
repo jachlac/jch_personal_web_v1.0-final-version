@@ -47,12 +47,45 @@ router.post('/new', async (req, res, next) => {
   }
 });
 
-router.get('/delete/:id', async (req, res, next) =>{
+router.get('/delete/:id', async (req, res, next) => {
   var id = req.params.id; //capturo el valor del id, lo guardo en la variable y lo paso en el await de mas abajo
 
   await updatesModel.deleteNewsById(id);
   res.redirect('/admin/updates')
 })
 
+
+router.get('/modify/:id', async (req, res, next) => { //carga el formulario con los datos del ID
+  var id = req.params.id;
+  var update = await updatesModel.getUpdatesById(id);
+  res.render('admin/modify', {
+    layout: 'admin/layout',
+    update
+  });
+});
+
+router.post('/modify', async (req, res, next) => { // cuando envio a traves del metodo post el /modify desencadena la funcion
+  try {
+    var obj = {
+      tittle: req.body.tittle,
+      subtittle: req.body.subtittle,
+      body: req.body.body
+    }
+    console.log(obj),
+    console.log(req.body.id)
+
+    await updatesModel.modifyUpdatesById(obj, req.body.id);
+    res.redirect('/admin/updates');
+  
+  } catch (error) {
+  console.log(error)
+  res.render('admin/modify', {
+    layout: 'admin/layout',
+    error: true,
+    message: 'Didnt modify the Update'
+  });
+}
+
+});
 
 module.exports = router;

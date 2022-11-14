@@ -25,4 +25,22 @@ async function deleteNewsById(id) { //especifico que borre en base a id y no seg
         return rows;
     }
 
-module.exports = { getUpdates, insertNew, deleteNewsById }
+    //trae la novedad por su id
+    async function getUpdatesById(id) {
+        var query = 'select * from updates where id = ?';
+        var rows = await pool.query(query, [id]);
+        return rows [0];
+    
+    }
+
+    async function modifyUpdatesById(obj, id) { //mandamos dos parametros para el update, el objeto y la id (que viaja oculta, modo hidden en el formulario)
+        try {
+        var query = 'update updates set ? where id = ?';
+        var rows = await pool.query(query, [obj, id]);
+        return rows;
+        } catch (error) {
+            throw error;
+        }
+    }
+
+module.exports = { getUpdates, insertNew, deleteNewsById, getUpdatesById, modifyUpdatesById }
