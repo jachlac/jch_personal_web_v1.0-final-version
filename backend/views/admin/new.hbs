@@ -3,10 +3,11 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 <div class="holder ">
- 
+
     <h1>Insert a new update</h1>
 
-    <form class='newsForm' action="/admin/updates/new" method="post">
+    <form class='newsForm' action="/admin/updates/new" method="post" enctype="multipart/form-data"> {{!-- multipart
+        habilita que el formulario pueda recibir otra cosa que no sea texto--}}
         <div class="mb-3">
             <label for="updateTittle" class="form-label">Tittle</label>
             <input type="text" name="tittle" class="form-control" id="updateTittle">
@@ -19,15 +20,18 @@
             <label for="updateBody" class="form-label">Body</label>
             <textarea type="text" name="body" class="form-control" id="updateBody"></textarea>
         </div>
+        <div class="mb-3">
+            <label>Imagen: <input type="file" class"form-control" name="image" id="image_id" /></label>
+        </div>
         {{!-- <div class="mb-3">
             <label for="updateImage" class="form-label">Image</label>
             <input type="text" name="images" class="form-control" id="updateImage">
         </div> --}}
-                <p className='acciones'></p>
+        <p className='acciones'></p>
         <button type="submit" class="btn btn-primary">Save</button>
         </p>
     </form>
-{{#if error}}
-<p>{{message}}</p>
-{{/if}}
+    {{#if error}}
+    <p>{{message}}</p>
+    {{/if}}
 </div>

@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileupload = require('express-fileupload');
+var cors = require('cors');
+
 
 require('dotenv').config(); //indico que el proyecto va a trabajar con variables de entorno
 var session = require('express-session'); // esto conviene ponerlo al principio para que lo cargue al iniciar
@@ -11,6 +14,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/updates');
+var apiRouter = require('./routes/api') //lo pongo al nivel del Index porque no es algo del admin
 
 
 var app = express();
@@ -33,7 +37,8 @@ app.use(session({
   saveUninitialized: true
 }));
 
-secured = async (req, res, next) => {
+//validador de inicio de sesion
+secured = async (req, res, next) => { 
   try {
     console.log(req.session.id_user);
     if (req.session.id_user) {
@@ -46,10 +51,17 @@ secured = async (req, res, next) => {
   }
 }
 
+app.use(fileupload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/updates', secured, adminRouter);
+app.use('/admin/updates', secured, adminRouter); // requiere validacion de usuario
+app.use('/api', cors(), apiRouter);// le sumo la funcion cors que hace que pueda enviar y recibir los datos
 
 
 // app.get('/admin/login', function (req,res){
