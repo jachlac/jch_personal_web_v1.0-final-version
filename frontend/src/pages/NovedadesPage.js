@@ -24,7 +24,7 @@ const NovedadesPage = (props) => {
             <h2>Novedades</h2>
             {
                 loading ? (
-                    <p>Cargando...</p>
+                    <p>Loading...</p>
                 ) : (
                     updates.map(item => <updateItem key={item.id}
                         tittle1={item.tittle} subtittle1={item.subtittle}
