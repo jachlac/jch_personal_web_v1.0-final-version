@@ -11,9 +11,9 @@ const HomePage = (props) => {
 
             <div className='inicio'>
                 <h3>Welcomen to Crypto State</h3>
-                <LoremIpsum p={1} />
-                <h3>What you will find in this web</h3>
                 <LoremIpsum p={3} />
+                <h3>What you will find in this web</h3>
+                <LoremIpsum p={4} />
             </div>
         </main>
     );

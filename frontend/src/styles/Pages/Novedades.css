@@ -1,0 +1,17 @@
+.style {
+    /* border: 2px solid;
+    border-color: black; */
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+
+
+.style img {
+    width: 400px;
+    border-radius: 20px;
+    float: right;
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
