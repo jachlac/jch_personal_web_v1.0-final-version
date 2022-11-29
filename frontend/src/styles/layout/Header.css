@@ -6,7 +6,7 @@ header {
 }
 
 header h1 {
-    color: #f2a900	;
+    color: #f2a900;
     font-size: 3em;
     font-weight: 1000;
     position: relative;
@@ -20,9 +20,10 @@ header h1 {
     align-items: center;
 
 }
-.headerLogo{
-display: flex;
-justify-content: flex-end;
-align-items: center;
+
+.headerLogo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
 }

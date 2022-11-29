@@ -8,7 +8,7 @@ const Nav = (props) => {
 
     return (
         <nav>
-            <div className="holder">
+            <div className="holder link">
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/News">News</Link></li>

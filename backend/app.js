@@ -38,7 +38,7 @@ app.use(session({
 }));
 
 //validador de inicio de sesion
-secured = async (req, res, next) => { 
+secured = async (req, res, next) => {
   try {
     console.log(req.session.id_user);
     if (req.session.id_user) {

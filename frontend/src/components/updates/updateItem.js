@@ -11,7 +11,7 @@ const UpdateItem = (props) => {
                 <h3>{subtittle1}</h3>
             </div>
             <div className='style'>
-            <img src={image1} />
+                <img src={image1} />
                 <div className='principal' dangerouslySetInnerHTML={{ __html: body1 }} />
             </div>
 

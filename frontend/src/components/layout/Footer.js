@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/layout/Footer.css'
-var hoy = new Date()
 
 const Footer = (props) => {
     return (

@@ -7,18 +7,18 @@ import Button from 'react-bootstrap/Button';
 const Header = (props) => {
     return (
         <header>
-        <div className='HolderH'>
-            <div className='headerLogo'>
-            <img src="./images/Header/header2.png" width="100" alt="Crypto"/>
-            <h1 >CRYPTO STATE</h1>
-            </div>
+            <div className='HolderH'>
+                <div className='headerLogo'>
+                    <img src="./images/Header/header2.png" width="100" alt="Crypto" />
+                    <h1 >CRYPTO STATE</h1>
+                </div>
 
-            <div className='loginButton'>
-            <Button href='/admin/login' variant="outline-warning">LOG IN</Button>{' '}
+                <div className='loginButton'>
+                    <Button href='/admin/login' variant="outline-warning">LOG IN</Button>{' '}
+                </div>
             </div>
-                  </div>
-            </header>
-        );
-    }
+        </header>
+    );
+}
 
-    export default Header;
+export default Header;

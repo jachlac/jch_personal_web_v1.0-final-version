@@ -86,7 +86,7 @@ router.get('/delete/:id', async (req, res, next) => {
 
   var update = await updatesModel.getUpdatesById(id);
   if (update.img_id) {
-    await(destroy(update.img_id));
+    await (destroy(update.img_id));
   }
 
   await updatesModel.deleteNewsById(id);

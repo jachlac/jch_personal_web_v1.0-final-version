@@ -1,9 +1,9 @@
 .contacto {
     display: flex;
-    /* justify-content: space-around; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 
 .contacto div {
     width: 100%;
@@ -30,6 +30,7 @@
 .formulario textarea {
     resize: none;
     height: 150px;
+    width: 188px;
 }
 
 .formulario input[type="submit"] {
@@ -50,9 +51,28 @@
 
 }
 
+.datos {
+    text-align: center;
+    padding-right: 50px;
+}
+
 .logos {
     display: flex;
     padding: 20px;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.logos [type="button"] {
+    background: #f2a900;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+
+    cursor: pointer;
+}
+
+.logos [type="button"]:hover {
+    background-color: #dc9b05;
 }

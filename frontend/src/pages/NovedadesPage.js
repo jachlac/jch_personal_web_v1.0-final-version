@@ -28,7 +28,7 @@ const NovedadesPage = (props) => {
                 ) : (
                     updates.map(item => <UpdateItem key={item.id}
                         tittle1={item.tittle} subtittle1={item.subtittle}
-                        body1={item.body} image1={item.image}  />)
+                        body1={item.body} image1={item.image} />)
                 )
             }
         </section>

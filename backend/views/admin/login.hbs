@@ -7,12 +7,12 @@
   <h1>Welcome</h1>
 
   <div class="mb-3">
-    <label for="inputUser" class="form-label">Email address</label>
+    <label for="inputUser" class="form-label">User</label>
     <input type="text" name="user" class="form-control" id="inputUser">
   </div>
   <div class="mb-3">
     <label for="inputPassword" class="form-label">Password</label>
-    <input type="password" name="password" class="form-control" id="inputPassword" >
+    <input type="password" name="password" class="form-control" id="inputPassword">
   </div>
   {{!-- <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -23,6 +23,6 @@
   </p>
 
 </form>
- {{#if error}}
- <p> Wrong user or password</p>
- {{/if}}
+{{#if error}}
+<p> Wrong user or password</p>
+{{/if}}
